@@ -1,0 +1,138 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+ --primary : #1a253f;
+ --dark : #151a33;
+ --secondary : #2b55cc;
+ --info : #4d79f6;
+ --ternary : #848db3;
+ --pure : #eff2f9;
+ --fade : #7881b9;
+ --mild : #8997bd;
+ --footer : #212a4a;
+ --black : #060b1b;
+ --twitter : #4ac7ec;
+ --dribble : #ff5da0;
+ --success : #1ecad8;
+ --danger : #f1646c;
+ --dark-blue : #28365f;
+}
+
+/* Reset */
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+body {
+font-family: 'IBM Plex Sans', sans-serif;
+background: var(--dark);
+
+-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ margin: 0;
+ line-height: 1;
+}
+
+
+.container{
+ max-width: 1140px;
+ margin: 0 auto;
+}
+
+
+nav{
+ background: var(--primary);
+ padding: 1.6rem 0;
+}
+nav .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .inner .logo {
+    text-transform: uppercase;
+    color: var(--pure);
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+nav .inner .logo i {
+ color: var(--info);
+}
+
+nav .inner button {
+    background: var(--secondary);
+    border: none;
+    padding: 0.6rem 1rem;
+    color: var(--pure);
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+section.profile {
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 68px;
+}
+
+section.profile .left{
+flex: 2;
+display: flex;
+align-items: center;
+}
+section.profile .left h2 {
+ color: var(--fade);
+ font-size: 24px;
+ font-weight: 600;
+ margin-bottom: 1rem;
+}
+section.profile .left p {
+ color: var(--mild);
+ font-size: 14px;
+}
+section.profile .left img {
+ width: 128px;
+ height: 128px;
+ border-radius: 50%;
+ object-fit: cover;
+ border: 2px solid var(--pure);
+}
+
+section.profile .left .avatar__black{
+ position: relative;
+ margin-right: 2rem;
+}
+section.profile .left .avatar__black span {
+ position: absolute;
+ right: 4px;
+ bottom: 4px;
+ background: var(--info);
+ width: 32px;
+ height: 32px;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: var(--pure);
+ box-shadow: 0px 0px 20px 0px rgba(32, 41, 54, 0.05);
+ cursor: pointer;
+}
+section.profile .right{
+ flex: 1;
+}
+section.profile .right ul.contact{
+ flex: 1;
+}
