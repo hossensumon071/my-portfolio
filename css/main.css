@@ -18,6 +18,8 @@
  --dribble : #ff5da0;
  --success : #1ecad8;
  --danger : #f1646c;
+ --dark-gray: #171f33;
+ --yellow: #f3c74c;
  --dark-blue : #28365f;
 }
 
@@ -365,4 +367,44 @@ section.skills .skills__wrapper .skill-box .progress__wrap .progress__bar .toolt
     color: var(--ternary);
     font-size: 16px;
     text-transform: uppercase;
+}
+
+section.counter__section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: var(--dark-gray);
+}
+
+section.counter__section > div {
+    display: flex;
+    align-items: center;
+}
+
+section.counter__section > div i {
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+section.counter__section > div:nth-child(1) i {
+    color: var(--yellow);
+}
+section.counter__section > div:nth-child(2) i {
+    color: var(--success);
+}
+section.counter__section > div:nth-child(3) i {
+    color: var(--dribble);
+}
+
+
+section.counter__section > div h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--fade);
+    margin-bottom: 8px;
+}
+
+
+section.counter__section > div h5 {
+    font-size: 14px;
+    color: var(--fade);
 }
